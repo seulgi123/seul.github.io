@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love publishing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+
+        <div class="project_bg">   
+            
+            <svg class="transition" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <path class="path" stroke="black" fill='#111' stroke-width="3px" dur="10s" vector-effect="non-scaling-stroke" 
+              d="M 0 100 L 100 100 100 100 0 100 C 0 0, 0 0, 0 100"/>
+                <animateMotion dur="10s" repeatCount="indefinite">
+                  <mpath xlink:href="#path" />
+                </animateMotion>
+            </svg>
+
+            <div class="project_con">
+                <div class="item">
+                    <h4>피죤 프로젝트</h4>
+                    <a href="http://www.pigeon.co.kr" target="_blank" class="site_url">http://www.pigeon.co.kr</a>
+                    <div class="content">
+                        <p class="txt">
+                            - 요약 : 피죤 홈페이지 리뉴얼 프로젝트 <br>
+                            - 기간 : 2022.09~ 2022.11 <br>
+                            - 인력구성/기여도 : 퍼블리셔 (기여도 100%/ 사용자, 관리자 페이지 100%) / 기획자(1), 디자이너(1), 개발(1)<br>
+                            - 주요업무/상세역할 : 피죤 브랜드의 전반적인 소개와 영문, 중문, 스페인어, 러시아어로 
+                            문의하기 게시판, 뉴스 게시판 
+                        </p>
+						<a href="http://www.pigeon.co.kr" target="_blank" class="view_site cursor_point">사이트 이동</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h4>현대IMC 프로젝트</h4>
+                    <a href="http://www.pigeon.co.kr" target="_blank" class="site_url">http://www.pigeon.co.kr</a>
+                    <div class="content">
+                        <p class="txt">
+                            - 요약 : 피죤 홈페이지 리뉴얼 프로젝트 <br>
+                            - 기간 : 2022.09~ 2022.11 <br>
+                            - 인력구성/기여도 : 퍼블리셔 (기여도 100%/ 사용자, 관리자 페이지 100%) / 기획자(1), 디자이너(1), 개발(1)<br>
+                            - 주요업무/상세역할 : 피죤 브랜드의 전반적인 소개와 영문, 중문, 스페인어, 러시아어로 
+                            문의하기 게시판, 뉴스 게시판 
+                        </p>
+						<a href="http://www.pigeon.co.kr" target="_blank" class="view_site cursor_point">사이트 이동</a>
+                    </div>
+                </div>
+                <img class="proj_close cursor_point" src="img/project_con_close.png" alt="닫기버튼">
+            </div>
+         </div>
+
+
+        <!-- <header class="header">
+            <h1 class="logo">슬기롭게</h1>
+        </header> -->
+
+        <section class="main">
+            <h2 class="slogan">
+                <p class="slogan_main">LIKE MY NAME ,</p>
+                <p class="slogan_sub">슬기롭게</p>
+            </h2>
+            <div class="vod_group">
+                <video class="vod" muted loop autoplay playsinline>
+                    <source src="video/main.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="img_group">
+                <div class="project_img"><img src="img/port_img1.jpg" alt="피죤 이미지"></div>
+                <div class="project_img"><img src="img/port_img2.jpg" alt="현대IMC 이미지"></div>
+                <div class="project_img"><img src="img/port_img2.jpg" alt="현대제철 이미지"></div>
+                <div class="project_img"><img src="img/port_img3.jpg" alt="달서선사관 이미지"></div>
+                <div class="project_img"><img src="img/port_img4.jpg" alt="더블플래그 이미지"></div>
+            </div>
+     
+        
+            <ul class="project_list">
+                <li class="project_piseon">
+                    <h3><span>01</span>PISEON</h3> 
+                </li>
+                <li class="project_">
+                    <h3><span>02</span>HYUNDAI <br>IMC</h3>
+                </li>
+                <li class="project_">
+                    <h3><span>03</span>HYUNDAI <br>STEEL</h3>
+                </li>
+                <li class="project_">
+                    <h3><span>04</span>DALSEO</h3>
+                </li>
+                <li class="project_">
+                    <h3><span>05</span>DOUBLE <br>FLAG</h3>
+                </li>
+            </ul>
+        </section>
+
+
+
+        <!-- <section class="work">
+            <div class="container">
+                <ul class="work_list">
+                    <li class="cursor_point">
+                        <div class="work_img"><img src="img/work_img1.png" alt="국정원 이미지"></div>
+                        <p class="txt">국정원 웹접근성</p>
+                    </li>
+                    <li class="cursor_point">
+                        <div class="work_img"><img src="img/work_img2.png" alt="빌리프 이미지"></div>
+                        <p class="txt">빌리프 메인 리뉴얼</p>
+                    </li>
+                    <li class="cursor_point">
+                        <div class="work_img"><img src="img/work_img2.png" alt="빌리프 이미지"></div>
+                        <p class="txt">빌리프 메인 리뉴얼</p>
+                    </li>
+                    <li class="cursor_point">
+                        <div class="work_img"><img src="img/work_img2.png" alt="국정원 이미지"></div>
+                        <p class="txt">국정원 웹접근성</p>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+    </div>
+    <script>
+
+        // 메인 사이즈
+        let main = $('.main');
+        let vod = $('.vod_group');
+
+
+        $(window).resize(function(){
+			let width = $(window).width();
+			let height = $(window).height();
+
+			if (width > 768){
+                main.outerHeight(height*3).outerWidth(width);
+                
+			} else {
+                main.outerHeight(height/1.15).outerWidth(width);
+			}	
+				
+		}).resize();
+
+
+
+        $(window).scroll(function(){
+            let scrTop = $(window).scrollTop();
+           // let workTop = $('.work').offset().top;
+            
+            //영상 사이즈
+            $(window).resize(function(){
+				let width = $(window).width();
+			let height = $(window).height();
+				if (width > 768){
+			
+					if(scrTop > 0){
+						let num = 40 + scrTop/15;
+						if(num < 100){
+							vod.outerWidth(num+'%').outerHeight('auto');
+						} else {
+							vod.outerWidth('100%').outerHeight($(window).height());
+						}
+					} 
+				} else {
+					vod.outerWidth('70%').outerHeight('auto');
+				}
+			}).resize();
+
+            if(scrTop > workTop-500){
+                $('body').addClass('dark');
+             //   $('.work .work_list li').addClass('active');
+            } else {
+                $('body').removeClass('dark');
+             //   $('.work .work_list li').removeClass('active');
+
+            }
+
+        });
+
+
+
+
+        // 마우스 이벤트
+        let cursor = $(".cursor");
+        let follower = $(".cursor-follower");
+		let cursorPoint = $('.cursor_point');
+        $(window).mousemove(function(e){
+            gsap.to(cursor, {duration: 0.3, left: e.pageX -5, top: e.pageY -5});
+            gsap.to(follower, {duration: 0.8, left: e.pageX -15, top: e.pageY -15});
+        });
+
+		cursorPoint.mousemove(function(e){
+            cursor.addClass('active');
+			follower.addClass('active');
+        });
+		cursorPoint.mouseout(function(){
+            cursor.removeClass('active');
+			follower.removeClass('active');
+
+        });
+    
+
+        // project 
+        let project = $(".project");
+        let imgGroup = project.find('.img_group');
+        let imgGroupImg = imgGroup.find('.project_img');
+        let prjList = project.find('.project_list li');
+        
+        
+        project.mousemove(function(e){
+            gsap.to(imgGroup, {duration: 0.3, left: e.clientX -5, top: e.clientY -5});
+        });
+
+        project.mouseout(function(){
+            imgGroupImg.removeClass('active');
+        });
+           
+        prjList.mousemove(function(){
+            let idx = $(this).index();
+            prjList.removeClass('active');
+            $(this).addClass('active');
+            imgGroupImg.eq(idx).addClass('active');
+        });
+
+        
+
+
+        //svg 이벤트
+        let path = document.querySelector(".path");
+        let pathBg = document.querySelector(".project_bg");
+        
+        console.log(path.getAttribute('d'))
+
+        function lerp(start, end, t){
+            return start * (1 - t) + end * t;
+        }
+
+        let toggle = false;
+        let y = 100;
+        let c = 100;
+
+        function animate(){
+            if(toggle){
+                y = lerp(y, 0, .055);
+                c = lerp(c, 0, 0.075);
+                path.setAttribute('d', `M 0 ${y} L 0 100 100 100 100 ${y} C ${50} ${c}, ${50} ${c}, 0 ${y}` );
+                pathBg.classList.add('active');
+            }else{
+                y = lerp(y, 100, .055)
+                c = lerp(c, 100, 0.075);
+                path.setAttribute('d', `M 0 ${y} L 0 100 100 100 100 ${y} C 50 ${c}, ${50} ${c}, 0 ${y}` );
+                pathBg.classList.remove('active');
+
+            }
+            
+            requestAnimationFrame(animate)
+        }
+        animate()
+
+    
+        let projectItem= $('.project_bg .project_con .item');
+		$('.project_list li').click(function(){
+		
+			setTimeout(function () {
+				toggle = !toggle;
+			}, 300);
+
+			
+			let listIdx = $(this).index();
+			//projectItem.hide();
+			setTimeout(function () {
+				projectItem.eq(listIdx).fadeIn(600);
+			}, 1000);
+
+		});
+
+        $('.project_bg .proj_close').click(function(){
+            
+            setTimeout(function () {
+				toggle = !toggle;
+			}, 300);
+            projectItem.fadeOut();
+
+            // if(toggle){
+            //     ul.classList.remove('active');
+
+            // }else{
+            //     setTimeout(() => {
+            //         ul.classList.add('active')
+            //     }, 1000)
+            // }
+			
+        });
+
+
+        
+
+
+        // work 
+        /*$(".work_img img").mousemove(function(e){
+            let clientX = e.clientX;
+            let clientY = e.clientY;
+
+            let standardX = $(window).width()/2 - clientX;
+            let standardY = $(window).height()/2 - clientY;
+
+            $(this).attr({"style" : "transform : translate(" + standardX/20 + "px," + standardY/20 +"px)" });
+
+        });*/
+
+
+        
+        
+
+        
+
+    </script>
+</body>
+</html>

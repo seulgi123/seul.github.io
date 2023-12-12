@@ -1,0 +1,90 @@
+	html {font-size: 10px;cursor: none;}
+	
+    body {background: #ededed;transition: all 1s ease-out;}
+    body.dark {background: #1a1a1a;}
+    .container {width: 1280px;margin: 0 auto;}
+    .cursor {position: absolute;left: 0; top: 0;width: 10px;
+        height: 10px;border-radius: 50%;
+        z-index: 9999;background-color: #fff;user-select: none;
+        pointer-events: none;
+		transition: opacity 0.8s;
+        mix-blend-mode: difference;}
+	.cursor.active {opacity: 0;}
+    .cursor-follower {position: absolute;width: 30px; height: 30px;background: #fff;
+        border-radius: 50%;z-index: 9999;
+        user-select: none;pointer-events: none;
+        mix-blend-mode: difference;
+		transition: transform 0.6s, background 0.6s;
+    }
+	.cursor-follower.active {transform: scale(5);background: rgba(120,0,0,0.55);mix-blend-mode: normal;}
+    .header .logo {font-family: 'EF_Rebecca';font-size: 20px;color: #fff;position: absolute;top: 30px;left: 30px;z-index: 100;}
+    .main {position: relative;}
+    .main .slogan {position: absolute;top: 22%;left: 7%;line-height: 120px;z-index: 100;}
+    .main .slogan p {font-family: 'EF_Rebecca';color: #111;font-size: 10rem;transition: all 0.4s;}
+    .main .slogan p.slogan_sub {font-size: 6.2rem;transition: all 0.4s;}
+    .main .vod_group {position: sticky;width: 40%;margin: 0 auto;top: 50%;left: 0%;transform: translate(0, -50%);transition: all 0.6s ease-out;overflow: hidden;}
+    /* .main .vod_group.active {position: absolute;top: auto;bottom: 0;transform: translate(-50%, 0);} */
+    .main .vod_group .vod {width: 100%;}
+    
+
+    /* .project {margin-top: 200px;} */
+    .project .project_list li:first-child {border-top: 1px solid #000;}
+    .project .project_list li {padding: 70px 5.5%;border-bottom: 1px solid #000;height: 340px;font-family: 'EF_Rebecca';transition: all 0.8s ease-out;}
+    .dark .project .project_list li {border-bottom: 1px solid #fff;}
+    .project .project_list li h3 {font-size: 7rem;transform: translate(0,0);transition: all 0.8s ease-out;line-height: 100px;color: #111;}
+    .dark .project .project_list li h3 {color: #fff;}
+    .project .project_list li.active h3 {transform: translate(8%,0);}
+    .project .project_list li h3 span {display: inline-block;margin-right: 20px;font-size: 20px;vertical-align: top;}
+
+    .project .img_group {position: fixed;top: 0;left: 0;transform: translate(-50%,-50%);/* opacity: 0; */
+    width: 874px;height: 515px;background-size: cover;pointer-events: none;transition: height 0.5s, opacity 0.5s 0.1s;}
+    .project .img_group .project_img {width: 100%;height: 0;overflow: hidden;transition: all 0.8s;position: absolute;}
+    .project .img_group .project_img img {transform: scale(1.6);transition: transform 1s ease-out;}
+    .project .img_group .project_img.active {height: 515px;}
+    .project .img_group .project_img.active img {transform: scale(1);}
+    .project_bg {position: fixed;width: 100%;min-height: 0;z-index: 900;}
+    .project_bg.active {min-height: 100%;}
+    .project_bg .transition {position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+    .project_bg .project_con {display: none;}
+    .project_bg.active .project_con {display: block;}
+    .project_bg .project_con {position: relative;}
+	.project_bg .project_con .item {display: none;text-align: center;background: url(img/project_con_img1_dark22.jpg);height: 100vh;padding: 13% 16%;background-size: cover;}
+    .project_bg .project_con h4 {font-family: 'EF_Rebecca';font-size: 60px;font-weight: 500;color: #fff;margin-bottom: 22px;}
+    .project_bg .project_con .site_url {font-family: 'NanumBarunGothic';display: inline-block;font-size: 36px;color: #fff;margin-bottom: 60px;}
+    .project_bg .project_con .content {text-align: center;}
+    .project_bg .project_con .content .txt {font-family: 'NanumBarunGothic';font-size: 18px;line-height: 28px;color: #fff;text-align: left;margin-bottom: 50px;}
+	.project_bg .project_con .content .view_site {font-family: 'NanumBarunGothic';display: inline-block;color: #fff;font-size: 20px;border: 1px solid #fff;height: 60px;line-height: 60px;width: 200px;border-radius: 13px;}
+    .project_bg .project_con .proj_close {position: absolute;top: 3%;right: 3%;width: 45px;}
+
+    .work {height: 200vh;margin-top: 200px;}
+    .work .work_list {display: flex;flex-wrap: wrap; justify-content: space-between;}
+    .work .work_list li {width: ;transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.84);transform: translate(0,50px);opacity: 0;}
+    .work .work_list li:nth-child(2) {transition-delay: 0.2s;margin-top: 8%;}
+    .work .work_list li:nth-child(3) {transition-delay: 0.4s;}
+    .work .work_list li:nth-child(4) {transition-delay: 0.6s;margin-top: 8%;}
+    .work .work_list li.active {transform: translate(0,0);opacity: 1;}
+    .work .work_list li .work_img {width: 480px;height: 320px;background: #ccc;position: relative;overflow: hidden;transition: transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.84);border-radius: 15px;}
+    .work .work_list li:nth-child(2n) .work_img {width: 637px;height: 408px;}
+    .work .work_list li .work_img img {position: absolute;left: -5%; top: -5%;width: 110%;height: 110%;transition: transform 1s;}
+    .work .work_list li .work_img img:hover {transform: scale(1.1);}
+
+	.work .work_list li .txt {font-family: 'EF_Rebecca';font-size: 32px;color: #fff;margin-top: 30px;}
+
+    
+
+	@media (max-width: 1600px){
+        html {font-size: 8.5px;}
+		.project .img_group {width: 660px;height: 389px;}
+		.project .img_group .project_img.active {height: 389px;}
+		.project .project_list li h3 {line-height: 80px;}
+		.work .work_list li .work_img {width: 380px;height: 220px;background: #ccc;position: relative;overflow: hidden;transition: transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.84);border-radius: 15px;}
+		.work .work_list li:nth-child(2n) .work_img {width: 537px;height: 308px;}
+	}
+    @media (max-width: 1280px){
+        html {font-size: 6px;}
+		.main .slogan {line-height: 80px;}
+		.project .img_group {width: 500px;height: 295px;}
+		.project .img_group .project_img.active {height: 295px;}
+		.project .project_list li {height: 270px;}
+		.project .project_list li h3 {line-height: 63px;}
+    }
